@@ -1,12 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment 3</title>
+    <link rel="icon" href="./assets/residential.png">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/d27f2c1515.js" crossorigin="anonymous"></script>
+
+     <!-- tailwind css and daisyUi -->
+     <script src="https://cdn.tailwindcss.com"></script>  
+     
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+     <script src="https://cdn.tailwindcss.com"></script>
+     <!-- google fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Grey+Qo&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet">
+      <!-- <style>
+        @layer utilities {
+  .green {
+    background-color: rgb(171, 239, 95);
+  }
+}
+      </style> -->
+
 </head>
 <body>
-    <h1>Hello World!</h1>
+    <header class="mt-12 mx-[5%]">
+        <!-- navigation part -->
+        <nav class="flex flex-row justify-between items-center">      
+                    <p class="text-3xl font-bold"><span class="rounded-[50%] bg-lime-300 px-2"><i class="fa-solid fa-arrow-right"></i></span> Rinterio</p>
+                <ul class="flex flex-row" >
+                    <li class="font-extrabold mx-6"><a href="">Home</a></li>
+                    <li class="font-medium text-inherit mx-6"><a href="">Services</a></li>
+                    <li class="font-medium text-inherit mx-6"><a href="">Portfolio</a></li>
+                    <li class="font-medium text-inherit mx-6"><a href="">Blogs</a></li>
+                    <li class="font-medium text-inherit mx-6"><a href="">Contact Us</a></li>
+                </ul> 
+                <div >
+                    <button class="bg-slate-200 rounded-[50%] px-2 py-1 mx-2"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <button class="bg-slate-200 rounded-[50%] px-2 py-1 mx-2"><i class="fa-solid fa-cart-shopping"></i></button>
+                    <button class="mx-2 p-3 bg-lime-300 rounded-[32px] text-xl font-bold">Book Consult <span class="rounded-[50%] bg-black text-white py-1 px-2"><i class="fa-solid fa-arrow-right"></i></span></button>
+                </div> 
+
+                <!-- <div>
+                    <span class="lg:hidden">
+                        <i class="fa-solid fa-bars"></i>
+                    </span>
+                </div> -->
+
+        </nav>
+        <!-- header main section -->
+         <div>
+            <img class="m-auto mt-8" src="./assets/banner.png" alt="">
+            <p class="text-center text-6xl font-extrabold mt-6">A barn house of this design has a <br> striking appearance</p>
+            <p class="text-center text-base font-medium mt-6">The barn house captivates with its blend of rustic charm and modern sophistication,
+                 featuring weathered wood, sleek metal <br> accents, and large windows that flood the space with natural light.</p>
+             <button class="block mx-auto p-3 bg-lime-400 rounded-[32px] text-xl font-bold mt-8">View Details 
+                    <span class="rounded-[50%] bg-lime-300 py-1 px-2"><i class="fa-solid fa-arrow-right"></i></span></button>
+          
+         </div>
+    </header>
+
+<!-- second section -->
+ <section class="relative bg-slate-100 px-[5%] py-[100px] my-[100px]">
+  <div class="flex flex-row justify-between" >
+    <div>
+        <button class="bg-white px-3 py-1 mb-8 mt-3 rounded-3xl"><span class="mx-2"><i class="fa-solid fa-arrow-right"></i></span>About Us</button>
+        <p class="font-extrabold text-4xl mb-6">We design thoughtful,<br> liveable spaces</p>
+        <p class="mb-9">The barn house captivates with its blend of rustic charm and <br>
+           modern sophistication, featuring weathered wood, sleek metal accents.</p>
+        <div class="flex flex-row mb-9 gap-6 bg-white p-6 rounded-2xl">
+           <img src="./assets/commercial.png" alt="">
+           <div><p class="text-xl font-bold">Commercial</p>
+            <p>The barn house captivates with its blend <br> of rustic charm and modern.</p></div>
+       </div>
+        <div class="flex flex-row gap-6 bg-white p-6 rounded-2xl">
+           <img src="./assets/residential.png" alt="">
+           <div><p class="text-xl font-bold">Residential</p>
+            <p>The barn house captivates with its blend <br>of rustic charm and modern.</p></div>
+        </div>
+       </div>
+       <div>
+           <img src="./assets/Rectangle.png" alt="">
+       </div>
+  </div>
+  <div>
+    <img class="absolute left-10 top-12" src="./assets/Vector.png" alt="">
+  </div>
+ </section>
     
 </body>
 </html>
