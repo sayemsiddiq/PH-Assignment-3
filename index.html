@@ -17,13 +17,6 @@
      <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-      <!-- <style>
-        @layer utilities {
-  .green {
-    background-color: rgb(171, 239, 95);
-  }
-}
-      </style> -->
 
 </head>
 <body>
@@ -62,7 +55,7 @@
 
 <!-- second section -->
  <section class="relative bg-slate-200 px-[10%] py-[100px] mb-[100px]">
-  <div class="flex flex-row justify-center gap-10" >
+  <div class="flex lg:flex-row sm:flex-col justify-center gap-10" >
     <div>
         <button class="bg-white font-bold px-3 py-1 mb-8 mt-3 rounded-3xl"><span class="mx-2"><i class="fa-solid fa-arrow-right"></i></span>About Us</button>
         <p class="font-extrabold text-4xl mb-6">We design thoughtful,<br> liveable spaces</p>
@@ -80,17 +73,17 @@
         </div>
        </div>
        <div>
-           <img src="./assets/Rectangle.png" alt="">
+           <img class="w-full" src="./assets/Rectangle.png" alt="">
        </div>
   </div>
   <div>
-    <img class="absolute left-[17%] top-12" src="./assets/Vector.png" alt="">
+    <img class="lg:block lg:absolute lg:left-[15%] lg:top-12 sm:hidden md:hidden" src="./assets/Vector.png" alt="">
   </div>
   <div class="mt-12">
     <button class="bg-white font-bold px-3 py-1 mb-8 mt-3 rounded-3xl block mx-auto"><span class="mx-2"><i class="fa-solid fa-arrow-right"></i></span>How we works</button>
     <p class="font-extrabold text-4xl mb-6 text-center">Our Works Process</p>
     <p class="text-center">The barn house captivates with its blend of rustic charm and modern sophistication,<br> featuring weathered wood, sleek metal accents.</p>
-    <div class="flex flex-row gap-8 justify-center mt-8">
+    <div class="grid lg:grid-cols-4 sm:grid-cols-1 md:grid-cols-2 gap-8 justify-center mt-8">
         <div class="p-6 bg-red-300 rounded-2xl">
             <img src="./assets/concept.png" alt="">
             <p class="font-extrabold text-xl">Concept</p>
@@ -110,6 +103,7 @@
     </div>
   </div>
  </section>
+ <!-- challenge part -->
  <section class="px-[16%] mb-[100px]">
     <button class="bg-lime-100 font-bold px-3 py-1 mb-8 mt-3 rounded-3xl block mx-auto"><span class="mx-2">
         <i class="fa-solid fa-arrow-right"></i></span>Explore our Latest works</button>
@@ -117,8 +111,8 @@
     <p class="text-center">
         The barn house captivates with its blend of rustic charm and modern sophistication,<br>
          featuring weathered wood, sleek metal accents.</p>
-    <div class="grid grid-cols-8 gap-6 mt-8">
-        <div class="flex flex-row gap-6 col-span-5 border-2 rounded-2xl p-6">
+    <div class="grid lg:grid-cols-8 md:grid-cols-2 gap-6 sm:grid-cols-1 mt-8">
+        <div class="flex lg:flex-row md:flex-row sm:flex-col gap-6 lg:col-span-5 md:col-span-2 border-2 rounded-2xl p-6">
             <img src="./assets/img1.png" alt="">
             <div>
             <p class="text-2xl font-bold mb-6">Commercial</p>
@@ -126,13 +120,13 @@
             <p class="text-2xl font-bold mt-6">View Details <span class="rounded-[50%] bg-lime-300 px-1"><i class="fa-solid fa-arrow-right rotate-[315deg]"></i></span></p>
             </div>
         </div>
-        <div class=" col-span-3 border-2 rounded-2xl p-6">
-            <img class="w-full" src="./assets/img2.png" alt="">
+        <div class=" lg:col-span-3 border-2 rounded-2xl p-6">
+            <img class="w-full h-full" src="./assets/img2.png" alt="">
         </div>
-        <div class=" col-span-2 border-2 rounded-2xl p-6">
-            <img class="w-full" src="./assets/img3.png" alt="">
+        <div class=" lg:col-span-2 border-2 rounded-2xl p-6">
+            <img class="w-full h-full" src="./assets/img3.png" alt="">
         </div>
-        <div class="flex flex-row gap-6 col-span-4 border-2 rounded-2xl p-6">
+        <div class="flex lg:flex-row md:flex-row gap-6 sm:flex-col lg:col-span-4 md:col-span-2 border-2 rounded-2xl p-6">
             <img src="./assets/img4.png" alt="">
            <div>
             <p class="text-2xl font-bold mb-6">Commercial</p>
@@ -140,9 +134,13 @@
             <p class="text-2xl font-bold mt-6">View Details <span class="rounded-[50%] bg-lime-300 px-1"><i class="fa-solid fa-arrow-right rotate-[315deg]"></i></span></p>
            </div>
         </div>
-        <div class=" col-span-2 border-2 rounded-2xl p-6">
-            <img class="w-full" src="./assets/img5.png" alt="">
+        <div class=" lg:col-span-2 border-2 rounded-2xl p-6">
+            <img class="w-full h-full" src="./assets/img5.png" alt="">
         </div>
+       </div>
+       <!-- <div class=" lg:hidden sm:hidden md:block md:col-span-1 border-2 rounded-2xl p-6">
+        <img class="w-full h-full" src="./assets/img3.png" alt="">
+        </div> -->
     </div>     
  </section>
  <!-- form section -->
@@ -155,7 +153,7 @@
          featuring weathered wood, sleek metal accents.</p>
      
     <div class="mx-[20%]">
-      <div class="grid grid-cols-2 gap-6 mt-8">
+      <div class="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-6 mt-8">
         <div><input class="w-full p-4 rounded-full" type="text" placeholder="First Name*"></div>
         <div><input class="w-full p-4 rounded-full" type="text" placeholder="Last Name*"></div>
         <div><input class="w-full p-4 rounded-full" type="tel" placeholder="Phone Number*"></div>
@@ -165,21 +163,62 @@
       <button class="mt-6 p-3 bg-lime-300 rounded-[32px] text-xl font-bold w-full">Send Mail
         <span class="rounded-[50%] bg-black text-white py-1 px-2"><i class="fa-solid fa-arrow-right rotate-[315deg]"></i></span></button>
     </div>     
-
-
   </section>
+
+  <!-- unique sections -->
+   <section class="py-10 px-[5%] bg-lime-50">
+    <button class="bg-lime-100 font-bold px-3 py-1 mb-8 mt-3 rounded-3xl block mx-auto"><span class="mx-2">
+        <i class="fa-solid fa-arrow-right"></i></span>Employees</button>
+    <p class="font-extrabold text-4xl mb-6 text-center">Our Managing Chiefs</p>
+    <p class="text-center">
+        The barn house captivates with its blend of rustic charm and modern sophistication,<br>
+         featuring weathered wood, sleek metal accents.</p>    
+    <div class="flex lg:flex-row sm:flex-col justify-between pt-20">
+            <div class="grid grid-cols-2 gap-6 my-8">
+                <div class="flex lg:flex-row sm:flex-col border p-5 rounded-2xl">
+                    <img class="lg:h-32 sm:h-38 rounded-2xl" src="./assets/eng1.jpg" alt="">
+                    <div class="mx-4 my-2 "><p class="font-extrabold text-xl">Barnardo Silva</p>
+                        <p>B.Sc and M.Sc in Architecture<br>University of Pisa <br>15+ years experience</div>
+                </div>
+                <div class="flex lg:flex-row sm:flex-col border p-5 rounded-2xl">
+                    <img class="lg:h-32 sm:h-38 rounded-2xl" src="./assets/eng2.jpg" alt="">
+                    <div class="mx-4 my-2 "><p class="font-extrabold text-xl">Alisa Monaci</p>
+                        <p>B.Sc and M.Sc in Civil<br>University of Milan <br>12+ field experience</div>
+                </div>
+                <div class="flex lg:flex-row sm:flex-col border p-5 rounded-2xl">
+                    <img class="lg:h-32 sm:h-38 rounded-2xl" src="./assets/eng3.jpg" alt="">
+                    <div class="mx-4 my-2 "><p class="font-extrabold text-xl">Lisandro Perez</p>
+                        <p>B.Sc and M.Sc in Civil<br>Sapienza University of Rome <br>10+ years and counting</div>
+                </div>
+                <div class="flex lg:flex-row sm:flex-col border p-5 rounded-2xl">
+                    <img class="lg:h-32 sm:h-38 rounded-2xl" src="./assets/eng4.jpg" alt="">
+                    <div class="mx-4 my-2 "><p class="font-extrabold text-xl">Di Gosta</p>
+                        <p>B.Sc and M.Sc in Civil<br>University of Padua<br>15+ years in this field</div>
+                </div>
+            </div>
+            <div class="mt-10">
+                <iframe class="rounded-2xl md:block md:mx-auto sm:block sm:mx-auto" width="560" height="315" src="https://www.youtube.com/embed/7x3Dz7idqCo?si=yokwijEHd8qVggKc"
+                 title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                 <button class="block mx-auto my-5 p-3 bg-lime-300 rounded-[32px] text-xl font-bold">Explore Houses
+                    <span class="rounded-[50%] bg-black text-white py-1 px-2"><i class="fa-solid fa-arrow-right rotate-[315deg]"></i></span></button>
+            </div>
+           
+        </div>
+    
+   </section>
   <!-- footer section -->
   <footer class="py-[100px] bg-black">
     <p class="text-3xl font-bold text-center"><span class="rounded-[50%] bg-lime-300 px-2"><i class="fa-solid fa-arrow-right rotate-[315deg]"></i></span><span class="text-white"> Rinterio</span></p>
     <p class="text-center mt-5 text-slate-300">
         The barn house captivates with its blend of rustic charm and modern sophistication,<br>
          featuring weathered wood, sleek metal accents.</p>
-    <ul class="flex flex-row justify-center my-12" >
-        <li class="font-extrabold mx-12 text-white"><a href="">Home</a></li>
-        <li class="font-medium text-inherit mx-12 text-white"><a href="">Services</a></li>
-        <li class="font-medium text-inherit mx-12 text-white"><a href="">Portfolio</a></li>
-        <li class="font-medium text-inherit mx-12 text-white"><a href="">Blogs</a></li>
-        <li class="font-medium text-inherit mx-12 text-white"><a href="">Contact Us</a></li>
+    <ul class="flex lg:flex-row md:flex-row sm:flex-col justify-center my-12 gap-8 text-center" >
+        <li class="font-extrabold lg:mx-12 text-white"><a href="">Home</a></li>
+        <li class="font-medium text-inherit lg:mx-12  text-white"><a href="">Services</a></li>
+        <li class="font-medium text-inherit lg:mx-12 text-white"><a href="">Portfolio</a></li>
+        <li class="font-medium text-inherit lg:mx-12 text-white"><a href="">Blogs</a></li>
+        <li class="font-medium text-inherit lg:mx-12 text-white"><a href="">Contact Us</a></li>
     </ul>
     <button class="block mx-auto p-3 bg-lime-300 rounded-[32px] text-xl font-bold">Book Consult
          <span class="rounded-[50%] bg-black text-white py-1 px-2"><i class="fa-solid fa-arrow-right rotate-[315deg]"></i></span></button>
